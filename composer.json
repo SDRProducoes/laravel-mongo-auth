@@ -27,11 +27,5 @@
     "autoload": {
         "psr-0": { "MongoAuth": "src/" }
     },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git://github.com/SDRProducoes/laravel-mongo-auth"
-        }
-    ]
+    "minimum-stability": "dev"
 }
