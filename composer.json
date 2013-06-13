@@ -31,7 +31,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/SDRProducoes/laravel-mongo-auth"
+            "url": "git://github.com/SDRProducoes/laravel-mongo-auth"
         }
     ]
 }
