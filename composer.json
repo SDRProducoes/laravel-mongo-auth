@@ -1,13 +1,13 @@
 {
-    "name": "navruzm/laravel-mongo-auth",
+    "name": "SDRProducoes/laravel-mongo-auth",
     "type": "library",
     "description": "MongoDB Auth Driver for Laravel 4",
     "keywords": ["L4", "MongoDB", "Laravel 4", "Laravel"],
-    "homepage": "http://github.com/navruzm/laravel-mongo-auth/",
+    "homepage": "http://github.com/SDRProducoes/laravel-mongo-auth/",
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
-        "navruzm/lmongo": "master-dev"
+        "SDRProducoes/lmongo": "master-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
