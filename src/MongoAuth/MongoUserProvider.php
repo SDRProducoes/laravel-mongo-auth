@@ -101,7 +101,15 @@ class MongoUserProvider implements UserProviderInterface {
     {
         $plain = $credentials['password'];
 
-        return $this->hasher->check($plain, $user->getAuthPassword());
+        if ($this->hasher->check($plain, $user->auth['password'])) return true;
+
+        if (isset($user->auth['passwordMD5']) && md5($plain) === $user->auth['passwordMD5']) {
+            \Usuario::where('_id', $user->_id)->update(array('auth.password' => \Hash::make($plain)));
+            \Usuario::where('_id', $user->_id)->update(array('auth.passwordMD5' => 1), '$unset');
+            return true;
+        }
+
+        return false;
     }
 
 }
